@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stream Agent</title>
+<style>
+  body{background:#0f1115;color:#e6e6e6;font:16px/1.65 system-ui,-apple-system,sans-serif;
+       margin:0;padding:48px 20px;display:flex;justify-content:center}
+  main{max-width:680px}
+  h1{font-size:30px;margin:0 0 6px}
+  .sub{color:#8b93a7;margin:0 0 32px}
+  h2{font-size:19px;margin:32px 0 10px;color:#e0b344}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  code{background:#1a1d26;padding:2px 6px;border-radius:4px;font-size:14px}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid #252936;color:#6b7280;font-size:14px}
+  a{color:#7aa2f7}
+</style>
+</head>
+<body>
+<main>
+  <h1>Stream Agent</h1>
+  <p class="sub">A desktop app that turns livestream highlights into short vertical videos.</p>
+
+  <h2>What it does</h2>
+  <p>Stream Agent runs on the streamer's own computer. It finds highlights in their
+  stream recordings and prepares each one for short-form platforms:</p>
+  <ul>
+    <li>Reframes 16:9 gameplay footage to 9:16 vertical</li>
+    <li>Transcribes the audio and burns in captions</li>
+    <li>Drafts a title, caption and hashtags</li>
+    <li>Holds every clip for the streamer to review, then posts the approved ones to the
+        accounts they connected</li>
+  </ul>
+
+  <h2>Who it is for</h2>
+  <p>Streamers who want to share their own highlights on short-form platforms. Each
+  streamer installs Stream Agent on their own computer and connects their own accounts.
+  It is not a hosted service, and it only posts content the streamer has approved.</p>
+
+  <h2>How TikTok is used</h2>
+  <p>The streamer connects their TikTok account with TikTok's Login Kit. For each clip,
+  the app shows which TikTok account it will post to, and the streamer edits the caption,
+  chooses who can view the video, chooses whether to allow comments, Duet and Stitch, and
+  can disclose commercial content. Nothing is posted until they approve it. If they prefer,
+  they can send the clip to their TikTok drafts to finish in the TikTok app instead.</p>
+  <p>The app requests <code>user.info.basic</code> (to show the account's name and avatar),
+  <code>video.publish</code> (to post approved clips) and <code>video.upload</code>
+  (to send clips to drafts). It cannot read, browse or delete the streamer's videos.</p>
+
+  <h2>Contact</h2>
+  <p>surahko1479@gmail.com</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> &middot;
+    <a href="./terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy - Stream Agent</title>
+<style>
+  body{background:#0f1115;color:#e6e6e6;font:16px/1.65 system-ui,-apple-system,sans-serif;
+       margin:0;padding:48px 20px;display:flex;justify-content:center}
+  main{max-width:680px}
+  h1{font-size:28px;margin:0 0 4px}
+  .sub{color:#8b93a7;margin:0 0 32px;font-size:14px}
+  h2{font-size:18px;margin:30px 0 8px;color:#e0b344}
+  code{background:#1a1d26;padding:2px 6px;border-radius:4px;font-size:14px}
+  a{color:#7aa2f7}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid #252936;color:#6b7280;font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Stream Agent &middot; Last updated: 30 September 2026</p>
+
+  <h2>Summary</h2>
+  <p>Stream Agent is a desktop app that runs entirely on the user's own computer.
+  There is no server, no hosted backend, and no analytics. The developer cannot see
+  the user's videos, credentials, or account activity.</p>
+
+  <h2>What is stored, and where</h2>
+  <p>All data stays on the user's own machine:</p>
+  <ul>
+    <li><strong>Video files</strong> - clips exported by the user's streaming software,
+        and the processed versions the tool creates.</li>
+    <li><strong>Transcripts</strong> - generated locally from the clip's audio to
+        produce captions.</li>
+    <li><strong>Access tokens</strong> - OAuth tokens for the platforms the user
+        connects, stored in a local file readable only by that user's account.</li>
+    <li><strong>A local database</strong> - filenames, titles, posting choices and
+        upload status, so the tool does not process the same clip twice.</li>
+    <li><strong>Twitch chat logs</strong> - if the user turns on chat ranking, the
+        public chat of the user's own channel during their streams, used to measure
+        how strongly viewers reacted to each moment.</li>
+  </ul>
+  <p>None of this is transmitted to the developer.</p>
+
+  <h2>Data shared with third parties</h2>
+  <p>Data leaves the user's computer only for these purposes, and only to the service
+  involved:</p>
+  <ul>
+    <li><strong>TikTok</strong> - receives each video the user approves, with its
+        caption and the posting choices the user made (who can view it, comments, Duet,
+        Stitch, commercial content disclosure), on the user's own account.</li>
+    <li><strong>YouTube, Facebook, Instagram</strong> - the same, where the user has
+        connected those accounts.</li>
+    <li><strong>OpenAI or Anthropic</strong> - if the user enables it, the clip's
+        transcript text (and, with chat ranking on, a number describing how active chat
+        was) is sent to pick highlights and draft titles and hashtags. No video and no
+        chat messages are sent.</li>
+  </ul>
+  <p>Each service's own privacy policy governs the data once it is received.</p>
+
+  <h2>TikTok permissions</h2>
+  <p>The app requests <code>user.info.basic</code>, to show the connected account's
+  display name and avatar so the user can see where a clip will post;
+  <code>video.publish</code>, to post clips the user approves with the settings they
+  chose; and <code>video.upload</code>, to send clips to the user's TikTok drafts
+  instead. It cannot read the user's videos, followers, messages or analytics, and it
+  cannot delete anything.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Because everything is local, the user controls retention entirely. Deleting the
+  application folder removes all stored data. Access can be revoked at any time from
+  the relevant platform's app-permissions settings, which immediately invalidates the
+  stored token.</p>
+
+  <h2>Children</h2>
+  <p>This tool is not directed at children under 13 and is not intended for their use.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated date above will change with it.</p>
+
+  <h2>Contact</h2>
+  <p>surahko1479@gmail.com</p>
+
+  <footer><a href="./index.html">Back to Stream Agent</a></footer>
+</main>
+</body>
+</html>
